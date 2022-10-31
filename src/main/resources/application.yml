@@ -1,0 +1,98 @@
+
+
+#Open API config
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /api-ui.html
+
+#Server config
+server:
+  port: 8086
+  servlet:
+    contextPath: /tax
+
+#Tax app config
+tax-rules:
+  singleEntryRuleMinutes: 60
+  validYear: 2013
+  maxTaxPerDay: 60
+  exemptedVehicles:
+    - Emergency
+    - Busses
+    - Diplomat
+    - Motorcycles
+    - Military
+    - Foreign
+    - OtherWithoutTax
+  exemptedHolidays:
+    - 2013-01-01
+    - 2013-01-05
+    - 2013-01-06
+    - 2013-03-28
+    - 2013-03-29
+    - 2013-03-30
+    - 2013-03-31
+    - 2013-04-01
+    - 2013-04-30
+    - 2013-05-01
+    - 2013-05-09
+    - 2013-05-18
+    - 2013-05-19
+    - 2013-06-06
+    - 2013-06-21
+    - 2013-06-22
+    - 2013-11-01
+    - 2013-11-02
+    - 2013-12-24
+    - 2013-12-25
+    - 2013-12-26
+    - 2013-12-31
+  exemptedDaysOfWeek:
+    - SATURDAY
+    - SUNDAY
+  exemptedMonthsOfTheYear:
+    - JULY
+  exemptedNoOfDatesBeforePublicHoliday: 1
+  tariff:
+    -
+      startTime: 06-00-00
+      endTime: 06-29-59
+      amount: 8
+    -
+      startTime: 06-30-00
+      endTime: 06-59-59
+      amount: 13
+    -
+      startTime: 07-00-00
+      endTime: 07-59-59
+      amount: 18
+    -
+      startTime: 08-00-00
+      endTime: 08-29-59
+      amount: 13
+    -
+      startTime: 08-30-00
+      endTime: 14-59-59
+      amount: 8
+    -
+      startTime: 15-00-00
+      endTime: 15-29-59
+      amount: 13
+    -
+      startTime: 15-30-00
+      endTime: 16-59-59
+      amount: 18
+    -
+      startTime: 17-00-00
+      endTime: 17-59-59
+      amount: 13
+    -
+      startTime: 18-00-00
+      endTime: 18-29-59
+      amount: 8
+    -
+      startTime: 18-30-00
+      endTime: 05-59-59
+      amount: 0
