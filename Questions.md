@@ -14,7 +14,7 @@ vehicle type can be used. and if there is a new vehicle type with tax, OtherWith
 
 5. When configuring the TaxCalculator, the order of the rules should be placed correctly.
 
-## API Doc
+## API Documentation
 * [Swagger UI](#http://localhost:8086/tax/swagger-ui/index.html)
 
 ## Sample Request 
