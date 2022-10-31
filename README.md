@@ -17,6 +17,10 @@
 ## API Documentation
 * [Swagger UI](#http://localhost:8086/tax/swagger-ui/index.html)
 
+````
+http://localhost:8086/tax/swagger-ui/index.html
+````
+
 ## Sample Request
 
 Make sure the datetime format is : yyyy-MM-dd HH:mm:ss
