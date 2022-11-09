@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
  *
  * @author Lasith Perera
  */
-public abstract class AbstractRule {
+public sealed abstract class AbstractRule permits AbstractRuleWithoutStatus,AbstractRuleWIthStatus{
 
     AbstractRule nextRule;
 

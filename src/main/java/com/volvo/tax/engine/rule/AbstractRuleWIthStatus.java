@@ -15,7 +15,7 @@ import java.util.Objects;
  *
  * @author Lasith Perera
  */
-public abstract class AbstractRuleWIthStatus<T> extends AbstractRule {
+public abstract non-sealed class AbstractRuleWIthStatus<T> extends AbstractRule {
 
 
     /**

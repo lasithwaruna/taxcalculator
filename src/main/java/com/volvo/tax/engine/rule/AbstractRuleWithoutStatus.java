@@ -15,7 +15,7 @@ import java.util.Objects;
  *
  * @author Lasith Perera
  */
-public abstract class AbstractRuleWithoutStatus extends AbstractRule {
+public abstract non-sealed class AbstractRuleWithoutStatus extends AbstractRule {
 
     @Override
     public final void apply(LocalDateTime localDateTime, PassByRefInteger taxForTheEntry, StatusStore statusStore) {
